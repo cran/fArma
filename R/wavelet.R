@@ -101,7 +101,7 @@ doplot = FALSE, title = NULL, description = NULL)
     bound.effect = ceiling(log(2*N, base = 2))
 
     # Calculate:
-    transform = .wd(x[1:(length)], filter = N)
+    transform = .wd(x[1:(length)], filter.number = N)
     statistic = rep(0, noctave)
     if (j2 > noctave - bound.effect) {
         # cat("Upper bound too high, resetting to ", noctave-bound.effect, "\n")
@@ -110,7 +110,7 @@ doplot = FALSE, title = NULL, description = NULL)
     }
     for (j in 1:(noctave - bound.effect)) {
         statistic[j] = log(mean((.accessD(transform,
-            lev = (noctave+1-j))[N:(2^(noctave+1-j)-N)])^2), base = 2)
+            level = (noctave+1-j))[N:(2^(noctave+1-j)-N)])^2), base = 2)
     }
 
     # Fit:
@@ -675,7 +675,7 @@ function(x, q)
 # Slider:
 
 
-.xHurst = NA
+## .xHurst = NA
 
 
 hurstSlider =
@@ -692,7 +692,7 @@ function(x = fgnSim())
     # FUNCTION:
 
     # Transform and Save Series:
-    .xHurst <<- as.vector(x)
+    .xHurst <- as.vector(x)
 
     # Internal Function:
     refresh.code = function(...)
