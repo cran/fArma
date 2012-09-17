@@ -1,12 +1,12 @@
 Package: fArma
-Version: 2160.77
-Revision: 4405
-Date: 2009-09-28
+Version: 2160.78
+Revision: 5353
+Date: 2012-09-17
 Title: ARMA Time Series Modelling
 Author: Diethelm Wuertz and many others, see the SOURCE file
 Depends: R (>= 2.4.0), methods, timeDate, timeSeries, fBasics
 Suggests: RUnit, tcltk
-Maintainer: Rmetrics Core Team <Rmetrics-core@r-project.org>
+Maintainer: Yohan Chalabi <yohan.chalabi@rmetrics.org>
 Description: Environment for teaching "Financial Engineering and
         Computational Finance"
 NOTE: SEVERAL PARTS ARE STILL PRELIMINARY AND MAY BE CHANGED IN THE
@@ -15,6 +15,6 @@ NOTE: SEVERAL PARTS ARE STILL PRELIMINARY AND MAY BE CHANGED IN THE
 LazyData: yes
 License: GPL (>= 2)
 URL: http://www.rmetrics.org
-Packaged: 2012-03-20 16:27:04 UTC; yankee
+Packaged: 2012-09-17 15:21:36 UTC; yankee
 Repository: CRAN
-Date/Publication: 2012-03-20 16:52:21
+Date/Publication: 2012-09-17 15:58:40
